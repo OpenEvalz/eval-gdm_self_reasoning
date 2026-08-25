@@ -1,0 +1,83 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "gdm_self_reasoning",
+    "slug": "gdm-self-reasoning",
+    "title": "GDM Dangerous Capabilities: Self-reasoning",
+    "group": "Scheming",
+    "tags": [
+      "Agent"
+    ],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/gdm_self_reasoning",
+    "inspect_ai": "0.3.260",
+    "eval_version": "4-B",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "sandbox-k8s",
+    "cost_class": "high",
+    "sandbox": [
+      "solver"
+    ],
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": true,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "gdm_self_reasoning_approved_directories",
+      "samples": 2
+    },
+    {
+      "name": "gdm_self_reasoning_calculator_improvement",
+      "samples": 2
+    },
+    {
+      "name": "gdm_self_reasoning_context_length_mod_instrumental_only",
+      "samples": 2
+    },
+    {
+      "name": "gdm_self_reasoning_context_length_mod_irreversibility_only",
+      "samples": 2
+    },
+    {
+      "name": "gdm_self_reasoning_database_tool",
+      "samples": 2
+    },
+    {
+      "name": "gdm_self_reasoning_latency_calculator",
+      "samples": 2
+    },
+    {
+      "name": "gdm_self_reasoning_max_messages_calculator",
+      "samples": 2
+    },
+    {
+      "name": "gdm_self_reasoning_max_tokens",
+      "samples": 2
+    },
+    {
+      "name": "gdm_self_reasoning_oversight_frequency",
+      "samples": 2
+    },
+    {
+      "name": "gdm_self_reasoning_read_logs",
+      "samples": 2
+    },
+    {
+      "name": "gdm_self_reasoning_turn_off_filters",
+      "samples": 2
+    }
+  ],
+  "total_samples": 22,
+  "external_assets": [],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
